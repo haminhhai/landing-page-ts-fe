@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    background-color: #052B76;
+    height: 274px;
+    padding-top: 28px;
+    position: relative;
+
+    & > :global(.ant-image) {
+        position: absolute;
+        left: 12px;
+        bottom: -7px;
+    }
+}
+
+.logo-section {
+    padding: 0 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag {
+    width: 43px;
+    height: 13px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8.5px;
+    font-family: Montserrat;
+    font-size: 7px;
+    font-weight: 600;
+    line-height: 8.53px;
+    text-align: left;
+    color: #fff;
+}
+
+.title {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 43px;
+    text-align: center;
+    color: #fff;
+    white-space: pre-line;
+}

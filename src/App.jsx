@@ -1,7 +1,8 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PublicLayout from "./layout/PublicLayout";
-import ChooseCard from "./features/coupon";
+import ChooseCard from "./features/choose-card";
+import FormRegister from "./features/form-register";
 
 function App() {
   
@@ -11,12 +12,15 @@ function App() {
       element: <PublicLayout />,
       children: [
         {
-          path: "choose-card",
+          index: true,
+          element: <FormRegister />,
+        },
+        {
+          path: "/choose-card",
           element: <ChooseCard />,
         }
       ]
     },
-
   ]);
   return (
     <RouterProvider router={router} /> 
