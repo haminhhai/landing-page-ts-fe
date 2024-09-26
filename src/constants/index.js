@@ -43,3 +43,9 @@ export const listFrequency = [
         label: '1 - 2 lần/ tháng',
     },
 ]
+
+export const messages = {
+    1: [
+        'Trong thời gian này, bạn có cơ hội để học tập và rèn luyện\nnhững kỹ năng mới.  Bạn sẽ tận tâm học hỏi, tập luyện\nmột cách hăng say, kiên trì cho đến khi đạt được kết\nquả bản thân mong muốn. Hãy bắt đầu quan tâm việc\nhọc ngay sau khi thông điệp này xuất hiện nhé!',
+    ]
+}

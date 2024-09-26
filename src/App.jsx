@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PublicLayout from "./layout/PublicLayout";
 import ChooseCard from "./features/choose-card";
 import FormRegister from "./features/form-register";
+import Message from "features/message";
 
 function App() {
   
@@ -18,6 +19,10 @@ function App() {
         {
           path: "/choose-card",
           element: <ChooseCard />,
+        },
+        {
+          path: "message",
+          element: <Message />,
         }
       ]
     },
