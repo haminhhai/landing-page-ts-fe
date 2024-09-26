@@ -48,3 +48,33 @@
     color: #fff;
     white-space: pre-line;
 }
+
+.content {
+    background-color: #A1CCE5;
+    padding: 24px 18px 28px;
+    position: relative;
+
+    & > :global(.ant-image) {
+        position: absolute;
+        z-index: 1;
+        &:first-child {
+            top: 0;
+            right: 50px;
+        }
+        &:nth-child(2) {
+            bottom: 5px;
+            left: 70px;
+        }
+    }
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+.footer {
+    background-color: #FFBA49;
+    height: 20px;
+}
