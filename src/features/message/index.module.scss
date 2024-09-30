@@ -15,53 +15,9 @@
 }
 
 .header {
-    margin-top: 28px;
-    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    & > :global(.ant-image) {
-        position: absolute;
-        z-index: 1;
-        &:first-child {
-            top: -15px;
-            left: 60px;
-        }
-        &:nth-child(2) {
-            top: 27px;
-            right: 50px;
-        }
-        &:nth-child(3) {
-            bottom: -68px;
-            right: 10vw;
-        }
-    }
-
-    h3 {
-        color: #fff;
-        font-weight: 800;
-        font-size: 35px;
-        margin: 0;
-    }
-
-    h1 {
-        color: #FFAD05;
-        font-weight: 800;
-        font-size: 50px;
-        margin: 0;
-    }
-
-    h5 {
-        font-family: Montserrat;
-        font-size: 18.5px;
-        font-style: italic;
-        font-weight: 700;
-        line-height: 22.55px;
-        text-align: left;
-        color: #fff;
-        margin: 0;
-    }
+    justify-content: center;
+    margin-top: 35px;
 }
 
 .coupon-wrapper {
@@ -102,6 +58,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 
     & > :global(.ant-image) {
         position: absolute;
@@ -113,10 +70,6 @@
         &:nth-child(2) {
             top: -30px;
             right: 8px;
-        }
-        &:nth-child(3) {
-            bottom: -9px;
-            right: 39px;
         }
     }
 
@@ -164,7 +117,28 @@
     font-size: 11.15px;
     font-weight: 600;
     line-height: 18.9px;
-    text-align: center;
-    margin: auto;
-    margin-top: 25px;
+    margin: 25px auto 20px;
+}
+.cond-wrapper {
+    margin: 33px 48px 0;
+    display: flex;
+    flex-direction: column;
+}
+.cond-title {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 23px;
+    color: #FFBA49;
+}
+
+.cond-desc {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: left;
+    color: #fff;
+    white-space: pre-line;
 }

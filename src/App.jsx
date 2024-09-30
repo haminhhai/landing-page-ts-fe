@@ -1,9 +1,13 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PublicLayout from "./layout/PublicLayout";
-import ChooseCard from "./features/choose-card";
 import FormRegister from "./features/form-register";
-import Message from "features/message";
+import NotFound from "features/not-found";
+import LoginPage from "features/login";
+import AdminLayout from "layout/AdminLayout";
+import AdminPage from "features/admin";
+import { ConfigProvider } from "antd";
+import ChooseCard from "features/choose-card";
 
 function App() {
   
@@ -14,21 +18,43 @@ function App() {
       children: [
         {
           index: true,
-          element: <FormRegister />,
-        },
-        {
-          path: "/choose-card",
           element: <ChooseCard />,
         },
-        {
-          path: "message",
-          element: <Message />,
-        }
       ]
     },
+    {
+      path: '/login',
+      element: <AdminLayout />,
+      children: [
+        {
+          index: true,
+          element: <LoginPage />,
+        },
+      ]
+    },
+    {
+      path: '/admin',
+      element: <AdminLayout />,
+      children: [
+        {
+          index: true,
+          element: <AdminPage />,
+        },
+      ]
+    },
+    {
+      path: "*",
+      element: <NotFound />
+    }
   ]);
   return (
-    <RouterProvider router={router} /> 
+    <ConfigProvider form={{
+      validateMessages: {
+        required: 'Trường này là bắt buộc!',
+      }
+    }}>
+      <RouterProvider router={router} />
+    </ConfigProvider>
   );
 }
 

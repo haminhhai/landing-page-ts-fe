@@ -119,15 +119,24 @@
 }
 
 .btn-signup {
-    width: 250px;
-    height: 40px;
-    background-color: #ffba49;
-    border-radius: 5px;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17px;
-    text-align: center;
-    color: #003192;
-    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    :global(.ant-btn) {
+        width: 200px;
+        height: 40px;
+        background-color: #ffba49;
+        border-radius: 20px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        text-align: center;
+        color: #003192;
+        margin-top: 24px;
+    }
+}
+.modal {
+    :global(.ant-modal-content) {
+        padding: 5px;
+    }
 }
