@@ -42,6 +42,7 @@ export default function AdminPage() {
         currentPage,
         pageSize: pagination.pageSize,
         isTook: formSearch.getFieldValue("isTook"),
+        code: formSearch.getFieldValue("code"),
       });
       setListCoupon(res.data);
       setPagination({
@@ -111,35 +112,35 @@ export default function AdminPage() {
       key: "tookAt",
       render: (_) => _ ? moment(_).format("YYYY/MM/DD HH:mm:ss") : ''
     },
-    {
-      title: 'Hành động',
-      dataIndex: "action",
-      key: "aciton",
-      render: (text, row) => {
-        return (
-          <Space>
-            {/* <Button
-              onClick={() => {
-                setOpenModal(true);
-                setSelected(row);
-              }}
-            >
-              <Tooltip title="Chỉnh sửa">
-                <EditOutlined />
-              </Tooltip>
+    // {
+    //   title: 'Hành động',
+    //   dataIndex: "action",
+    //   key: "aciton",
+    //   render: (text, row) => {
+    //     return (
+    //       <Space>
+    //         {/* <Button
+    //           onClick={() => {
+    //             setOpenModal(true);
+    //             setSelected(row);
+    //           }}
+    //         >
+    //           <Tooltip title="Chỉnh sửa">
+    //             <EditOutlined />
+    //           </Tooltip>
 
-            </Button> */}
-            <Popconfirm
-              title="Bạn chắc chắn muốn xóa mã khuyến mại?"
-              description=""
-              onConfirm={() => onConfirm(row._id)}
-            >
-              <Button danger>Xóa</Button>
-            </Popconfirm>
-          </Space>
-        );
-      },
-    },
+    //         </Button> */}
+    //         <Popconfirm
+    //           title="Bạn chắc chắn muốn xóa mã khuyến mại?"
+    //           description=""
+    //           onConfirm={() => onConfirm(row._id)}
+    //         >
+    //           <Button danger>Xóa</Button>
+    //         </Popconfirm>
+    //       </Space>
+    //     );
+    //   },
+    // },
   ];
   
 

@@ -142,3 +142,20 @@
     color: #fff;
     white-space: pre-line;
 }
+
+.go-down {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 23px;
+    text-align: left;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    :global(.ant-btn) {
+        span {
+            font-family: Montserrat !important;
+            font-weight: 800;
+        }
+    }
+}

@@ -2,7 +2,7 @@ import style from './index.module.scss';
 import classNames from 'classnames/bind';
 import star from 'assets/images/star.png'
 import mustache from 'assets/images/mustache.png'
-import { Button, Form, Image, Modal, Radio, Space } from 'antd';
+import { Button, Form, Image, Input, Modal, Radio, Space } from 'antd';
 import { listFrequency, listStoreAddress } from 'constants/index';
 import couponApi from 'api/coupon';
 import { useState } from 'react';
@@ -10,6 +10,7 @@ import { useState } from 'react';
 const cx = classNames.bind(style);
 export default function FormRegister({ onClose, open }) {
     const [form] = Form.useForm();
+    const frequency = Form.useWatch('frequency', form);
     const [loading, setLoading] = useState(false);
 
     const onSubmit = async (values) => {
@@ -70,12 +71,16 @@ export default function FormRegister({ onClose, open }) {
                             </Radio.Group>
                         </Form.Item>
 
-                        <span className={cx('antherAnswer')}>*Câu trả lời khác</span>
-                        <div className={cx('quote')}>
-                            <span>A morning coffee can chat illuminate many cool ideas for your brands. Are you up for one?</span>
-                            <Image preview={false} src={mustache} alt='mustache' width={57} />
-                        </div>
-
+                        {
+                            frequency == 4 &&
+                            <div className={cx('quote')}>
+                                <span className={cx('antherAnswer')}>*Câu trả lời khác</span>
+                                <Form.Item className={cx('input-other')} name='other' rules={[{ required: true }]} extra="Nhập tối đa 255 ký tự">
+                                    <Input.TextArea rows={7} maxLength={255}/>
+                                </Form.Item>
+                                <Image preview={false} src={mustache} alt='mustache' width={57} />
+                            </div>
+                        }
                         <Form.Item className={cx("btn-signup")}>
                             <Button type="primary" htmlType="submit" size="large" loading={loading}>
                                 DONE !
