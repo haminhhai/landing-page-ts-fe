@@ -1,12 +1,10 @@
 .container {
-    width: 100%;
-    height: 100vh;
     border: 3px solid #ffba49;
     border-radius: 3px;
     background-color: #003192;
 }
 .wrapper {
-    width: 300px;
+    max-width: 300px;
     margin: 46px auto 24px;
 }
 
@@ -55,7 +53,7 @@
     }
 
     :global(.ant-form-item) {
-        margin-left: 24px;
+        margin-left: 10px;
     }
 }
 
@@ -89,12 +87,12 @@
     line-height: 13.41px;
     text-align: left;
     color: #fff;
-    margin-left: 24px;
+    margin-left: 10px;
     margin-bottom: 8px;
 }
 
 .quote {
-    margin-left: 24px;
+    margin-left: 10px;
     border: 1px solid #ffba49;
     width: 250px;
     height: 103px;
