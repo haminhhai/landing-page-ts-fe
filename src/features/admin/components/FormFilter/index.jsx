@@ -9,17 +9,11 @@ const FormFilter = ({ form, submit, loading }) => {
         <Row gutter={16}>
           <Col span={4}>
             <Form.Item
-              name="isTook"
-              label="Trạng thái"
+              name="code"
+              label="Mã khuyến mại"
             >
-              <Select
-                allowClear
-                options={[
-                  { label: "Chưa sử dụng", value: "0" },
-                  { label: "Đã sử dụng", value: "1" },
-                ]}
-              />
-          </Form.Item>
+              <Input />
+            </Form.Item>
           </Col>
         </Row>
         <Row>

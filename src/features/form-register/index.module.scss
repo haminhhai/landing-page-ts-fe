@@ -92,27 +92,19 @@
 }
 
 .quote {
-    margin-left: 10px;
-    border: 1px solid #ffba49;
-    width: 250px;
-    height: 103px;
-    border-radius: 5px;
-    padding: 15px 22px;
-    line-height: 9.75px;
     position: relative;
-
-    span {
-        color: #fff;
-        font-family: Montserrat;
-        font-size: 8px;
-        font-weight: 400;
-        text-align: left;
-    }
 
     :global(.ant-image) {
         position: absolute;
         right: 26px;
-        bottom: -11px;
+        bottom: 14px;
+    }
+
+    :global(.ant-form-item-extra) {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        color: #ffba49;
     }
 }
 
@@ -136,5 +128,16 @@
 .modal {
     :global(.ant-modal-content) {
         padding: 5px;
+    }
+}
+
+.input-other {
+    :global(textarea.ant-input) {
+        background-color: transparent !important;
+        border: 1px solid #FFBA49;
+        color: #fff;
+        font-family: Montserrat;
+        font-weight: 400;
+        line-height: 14px;
     }
 }
