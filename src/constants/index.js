@@ -53,7 +53,7 @@ export const listFrequency = [
 
 export const conditions = {
     1: '- Mua đồ uống Cupid với giá ưu đã chỉ #35K\n- 01 Voucher chỉ áp dụng cho 01 hóa đơn\n- Không áp dụng đồng thời các CTKM khác \n- Vui lòng chụp lại màn hình và xuất trình Voucher \n  cho NVBH để áp dụng ưu đãi \n- Áp dụng tại 6 cửa hàng trực thuộc quyền\n  quản lý của Mr Good Tea Hải Phòng',
-    2: '- Khi mua đồ uống Cupid, bạn được tặng thêm\n   1 topping tự chọn bất kỳ\n- 01 Voucher chỉ áp dụng cho 01 hóa đơn\n- Không áp dụng đồng thời các CTKM khác \n- Vui lòng chụp lại màn hình và xuất trình Voucher\n   cho NVBH để áp dụng ưu đãi \n- Áp dụng tại 6 cửa hàng trực thuộc quyền quản\n   lý của Mr Good Tea Hải Phòng',
+    2: '- Khi mua đồ uống Cupid, bạn được tặng thêm 1 topping tự chọn bất kỳ\n- 01 Voucher chỉ áp dụng cho 01 hóa đơn\n- Không áp dụng đồng thời các CTKM khác \n- Vui lòng chụp lại màn hình và xuất trình Voucher\n   cho NVBH để áp dụng ưu đãi \n- Áp dụng tại 6 cửa hàng trực thuộc quyền quản\n   lý của Mr Good Tea Hải Phòng',
     3: '- Ưu đãi giảm 50% tối đa 20K cho hóa đơn trên 59K\n- 01 Voucher chỉ áp dụng cho 01 hóa đơn\n- Không áp dụng đồng thời các CTKM khác \n- Vui lòng chụp lại màn hình và xuất trình Voucher \n  cho NVBH để áp dụng ưu đãi \n- Áp dụng tại 6 cửa hàng trực thuộc quyền\n  quản lý của Mr Good Tea Hải Phòng',
     4: '- Khách hàng mua 2 đồ uống Cupid được tặng 1 trà\n   sữa size M bất kì (nằm trong danh mục trà sữa)\n- 01 Voucher chỉ áp dụng cho 01 hóa đơn\n- Không áp dụng đồng thời các CTKM khác \n- Vui lòng chụp lại màn hình và xuất trình Voucher \n  cho NVBH để áp dụng ưu đãi \n- Áp dụng tại 6 cửa hàng trực thuộc quyền\n  quản lý của Mr Good Tea Hải Phòng'
 };
