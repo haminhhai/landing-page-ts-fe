@@ -83,6 +83,7 @@ export default function Message({ card, coupon }) {
                 <div className={cx('cond-wrapper')}>
                     <span className={cx('cond-title')}>Điều kiện áp dụng:</span>
                     <span className={cx('cond-desc')}>{conditions[coupon.programCode == '215334' ? 4 : card]}</span>
+                    <span className={cx('cond-title')}>* Vui lòng chụp lại màn hình và xuất trình Voucher cho NVBH để áp dụng ưu đãi</span>
                 </div>
             </div>
         </div>
