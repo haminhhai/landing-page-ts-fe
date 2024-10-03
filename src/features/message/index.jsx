@@ -53,9 +53,7 @@ export default function Message({ card, coupon }) {
                     <h5>dành cho bạn</h5>
                     <div className={cx('divider')} />
                 </div>
-                <p className={cx('message')}>
-                    {messages[card][Math.floor(Math.random() * messages[card].length)]}
-                </p>
+                <p className={cx('message')} dangerouslySetInnerHTML={{ __html: messages[card][Math.floor(Math.random() * messages[card].length)] }} />
                 <div className={cx('go-down')} onClick={scrollToEndPageSmooth}>
                     <Button size='large' icon={<DownCircleTwoTone style={{ fontSize: '24px' }} twoToneColor='#FFBA49'/>}>NHẤN VÀO ĐÂY - NHẬN VOUCHER</Button>
                 </div>
