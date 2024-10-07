@@ -15,6 +15,20 @@ const FormFilter = ({ form, submit, loading }) => {
               <Input />
             </Form.Item>
           </Col>
+          <Col span={4}>
+            <Form.Item
+              name="isTook"
+              label="Trạng thái"
+            >
+              <Select
+                allowClear
+                options={[
+                  { label: "Chưa sử dụng", value: "0" },
+                  { label: "Đã sử dụng", value: "1" },
+                ]}
+              />
+          </Form.Item>
+          </Col>
         </Row>
         <Row>
           <Col span={2}>
